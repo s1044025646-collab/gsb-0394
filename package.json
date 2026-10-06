@@ -1,0 +1,28 @@
+{
+  "name": "paillier-teaching-backend",
+  "version": "1.0.0",
+  "description": "Windows 本地教学用 Paillier 加法同态 API 与 CLI",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "paillier-teach": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "start": "node dist/server.js",
+    "demo": "node dist/cli.js demo",
+    "cli": "node dist/cli.js"
+  },
+  "keywords": [
+    "paillier",
+ "homomorphic-encryption",
+    "teaching",
+    "sqlite"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^25.0.0",
+    "typescript": "^5.9.0"
+  }
+}
